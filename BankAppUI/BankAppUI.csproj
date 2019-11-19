@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BD8664B-4015-44B0-A1CA-A5E9884DE4F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BankAppUI</RootNamespace>
+    <AssemblyName>BankAppUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminControlPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminControlPanel.Designer.cs">
+      <DependentUpon>AdminControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCreateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCreateCustomer.Designer.cs">
+      <DependentUpon>AdminCreateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFunctions.cs" />
+    <Compile Include="AdminInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInterface.Designer.cs">
+      <DependentUpon>AdminInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOrCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminOrCustomer.Designer.cs">
+      <DependentUpon>AdminOrCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUpdateCustomer.Designer.cs">
+      <DependentUpon>AdminUpdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDeposit.Designer.cs">
+      <DependentUpon>CustomerDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerFunctions.cs" />
+    <Compile Include="CustomerInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerInterface.Designer.cs">
+      <DependentUpon>CustomerInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerLogin.Designer.cs">
+      <DependentUpon>CustomerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerTransfer.Designer.cs">
+      <DependentUpon>CustomerTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerWithdrawal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerWithdrawal.Designer.cs">
+      <DependentUpon>CustomerWithdrawal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminControlPanel.resx">
+      <DependentUpon>AdminControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCreateCustomer.resx">
+      <DependentUpon>AdminCreateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminInterface.resx">
+      <DependentUpon>AdminInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminOrCustomer.resx">
+      <DependentUpon>AdminOrCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUpdateCustomer.resx">
+      <DependentUpon>AdminUpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDeposit.resx">
+      <DependentUpon>CustomerDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerInterface.resx">
+      <DependentUpon>CustomerInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerLogin.resx">
+      <DependentUpon>CustomerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerTransfer.resx">
+      <DependentUpon>CustomerTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerWithdrawal.resx">
+      <DependentUpon>CustomerWithdrawal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Admin\Admin.csproj">
+      <Project>{6f61fbd7-44ef-4b9f-8305-df86d1727a9b}</Project>
+      <Name>Admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Customers\Customers.csproj">
+      <Project>{0b470f87-7981-41ea-a17f-6e51b84175ef}</Project>
+      <Name>Customers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Methods\Methods.csproj">
+      <Project>{39be4105-968d-4367-a82d-9356c5b71cb7}</Project>
+      <Name>Methods</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewBank\NewBank.csproj">
+      <Project>{0e225285-31d7-4f7e-8ffe-1e636da3d379}</Project>
+      <Name>NewBank</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{303efe24-45e9-447b-a37c-18aef9053bd1}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
